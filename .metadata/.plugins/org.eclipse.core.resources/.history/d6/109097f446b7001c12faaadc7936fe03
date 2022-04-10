@@ -1,0 +1,43 @@
+package Tp1;
+
+public class Employe {
+	private String nom;
+	private String id;
+	private long  ca;
+	private int  nh;
+	private int salaire;
+	private long commis;
+	
+	
+	
+	public Employe(String nom, String id,long ca) {
+		this.nom=nom;
+		this.id=id;
+		this.ca=ca;
+		
+	}
+	
+	public double commission() {
+		if(ca > 80000) {
+			commis=(ca*25)/100;
+		}
+		else {
+			commis=(ca*100)/100;
+		}
+		return commis;
+	}
+	
+	public double salaire() {
+		long salaire;
+		salaire=nh*15000;
+		long sal;
+		sal=commis+salaire;
+		
+		return salaire;
+	}
+	
+	public void afficher() {
+		System.out.println("Le nom est"+nom+"l identifiant est"+id+"le salaire est"+salaire);
+	}
+
+}

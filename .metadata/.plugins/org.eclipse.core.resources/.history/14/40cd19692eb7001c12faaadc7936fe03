@@ -1,0 +1,29 @@
+package Tp1;
+
+import java.util.Scanner;
+
+public class Epsilon {
+
+	public static void main(String[] args) {
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter le om et l identifiant de l aplication");
+		String nom,id;
+		
+		nom=s.nextLine();
+		id=s.nextLine();
+        
+        System.out.println("Entrer ses heures effectué et le chiffre d'affaire");
+        long ca;
+        
+        nh=s.nextInt();
+        ca=s.nextLong();
+        
+        Employe emp=new Employe(nom,id,ca);
+        
+        emp.commission();
+        emp.salaire();
+        
+	}
+
+}

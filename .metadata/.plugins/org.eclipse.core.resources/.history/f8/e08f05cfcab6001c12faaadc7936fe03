@@ -1,0 +1,13 @@
+package tpjava;
+
+public class simplon1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result=4*8;
+		
+		System.out.println(result);
+
+	}
+
+}

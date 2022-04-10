@@ -1,0 +1,46 @@
+package Personnel;
+
+public class Personnel {
+	private String nom;
+	private String matricule;
+	private String societe;
+	private int ht;
+	private int hc;
+	
+	
+	public Personnel(String nom,String matricule,String societe,int ht,int hc) {
+		this.nom=nom;
+		this.matricule=matricule;
+		this.societe=societe;
+		this.ht=ht;
+		this.hc=hc;
+	}
+	
+	public double indemnite() {
+		double montant;
+		if(hc>15) {
+			montant=7000*hc;
+		}
+		else {
+			montant=5000*hc;
+		}
+		
+		return montant;
+		
+	}
+	
+	public double pension() {
+		double pension,sal;
+		sal=10000*ht;
+		pension=sal+montant;
+
+		return pension;
+		
+		
+	}
+	
+	public void imprimer() {
+		System.out.println("Le nom est"+nom+"le matricule"+matricule+"la societe"+societe+"la pension"+pension);
+	}
+
+}
