@@ -7,7 +7,7 @@ public class ControleBoucleDoWile{
         
         System.out.println("Saisissez un entier");
         a=s.nextInt();
-
+        
         do {
             System.out.println(i);
             i++;
