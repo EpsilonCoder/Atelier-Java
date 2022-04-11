@@ -18,6 +18,5 @@ public class TestValeur{
         }
         
         System.out.println("La somme des deux valeur saisi est =>" +Somme);
-
     }
 }
