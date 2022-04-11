@@ -17,7 +17,7 @@ public class TestPersonnel {
 		System.out.println("Enter hc et hc");
 		ht=s.nextInt();
 		hc=s.nextInt();
-		
+
 		Personnel p=new Personnel(nom,matricule,societe,ht,hc);
 		p.indemnite();
 		p.pension();

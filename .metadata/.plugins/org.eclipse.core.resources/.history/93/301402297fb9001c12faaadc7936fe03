@@ -1,0 +1,13 @@
+package atelier4_tache2;
+
+public class SaisiPersonne {
+	
+	private String matricule;
+	private String nom;
+	private String prenom;
+	private String adresse;
+	private String dateNaissance;
+	private String lieuNAissance;
+	private int telephone;
+
+}

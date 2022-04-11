@@ -1,0 +1,20 @@
+package atelier4_tache2;
+
+import java.util.Scanner;
+
+public class Personne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String matricule,nom,prenom,adresse,dateNaissance,lieuNaissance,telephone;
+		
+		Scanner s=new Scanner(System.in);
+		
+		System.out.println("Entrer le matricule , le nom et le prenom de la personne");
+		
+		matricule=s.nextLine();
+		nom
+
+	}
+
+}
