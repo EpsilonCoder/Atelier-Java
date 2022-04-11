@@ -1,0 +1,18 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		
+		String s[]=new String[10];
+		s[2]=new String("Bonsoir");
+		
+		System.out.println(s[2]);
+		
+		
+
+	}
+
+}

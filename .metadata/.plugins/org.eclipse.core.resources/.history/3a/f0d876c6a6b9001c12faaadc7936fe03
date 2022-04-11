@@ -1,0 +1,28 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		
+		int i,j;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Entrer le nombre de colone");i=s.nextInt();
+		System.out.println("Entrer le nombre de ligne");j=s.nextInt();
+
+		String tab[]=new String[i];
+		for (int x=0 ;x<i;x++) {
+			for(int a=0;a<j;a++) {
+				System.out.println("Entrer l'element ["+(i+1)+"]" +"["+(j+1)+"]");
+			}
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+}

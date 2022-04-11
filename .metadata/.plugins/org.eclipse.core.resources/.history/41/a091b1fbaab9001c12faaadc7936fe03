@@ -1,0 +1,31 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		
+		int tab[] ;
+		int i = 0,N;
+		
+		System.out.println("Veillez enregister le nombre d element de votre tableau");
+		tab=new int[i];
+		N=s.nextInt();
+		for (i=0;i<N;i++) {
+			System.out.println("Enregister l element a la postion N "+i);
+			tab[i]=s.nextInt();	
+		}
+		
+		for (i=0;i<N;i++) {
+			System.out.println(tab[i]+" ,");
+		}
+		
+	
+		
+		
+		
+	}
+
+}

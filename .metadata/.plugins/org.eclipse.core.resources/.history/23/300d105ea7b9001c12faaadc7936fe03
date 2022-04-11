@@ -1,0 +1,57 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		
+		 int tab[];
+	        int i, N, num, pos;
+	 
+	        // Saisir la taille actuelle du tableau */
+	        System.out.print("Saisir le nombre d'éléments : ");
+	        N = clavier.nextInt();
+	 
+	        // intialiser la taille des tableaux avec N
+	        tab = new int[N + 1];
+	 
+	        // Saisir les éléments du tableau source */
+	        for (i = 0; i < N; i++) {
+	            System.out.print("Elément " + (i + 1) + " : ");
+	            tab[i] = clavier.nextInt();
+	        }
+	 
+	        // Saisir un élément et sa position d'insertion */
+	        System.out.print("Saisir un élément : ");
+	        num = clavier.nextInt();
+	        System.out.print("Saisir une position : ");
+	        pos = clavier.nextInt();
+	 
+	        // Si la position et non valide */
+	        if (pos > N + 1 || pos <= 0) {
+	            System.out.println("Position invalide! Veuillez saisir une position entre 1 et " + N);
+	        } else {
+	            /*
+	              Faites de la place pour un nouvel élément de tableau en déplaçant les
+	              éléments juste après la position vers la droite
+	             */
+	            for (i = N; i >= pos; i--) {
+	                tab[i] = tab[i - 1];
+	            }
+	 
+	            // Insérer un nouvel élément à une position donnée et incrémenter N */
+	            tab[pos - 1] = num;
+	            N++;
+	 
+	            // Afficher le tableau après l'opération d'insertion */
+	            for (i = 0; i < N; i++) {
+	                System.out.print(tab[i] + " , ");
+	            }
+	        }
+	 
+	        // fermer les ressources
+	        clavier.close();
+	    }
+
+}

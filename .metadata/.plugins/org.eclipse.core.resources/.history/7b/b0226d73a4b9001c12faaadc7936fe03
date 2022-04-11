@@ -1,0 +1,19 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		
+		int i = 0;
+		int [] tab = new int [i] ;
+		for(i=0;i<tab.length;i++) {
+			Scanner s=new Scanner(System.in);
+			tab[i]=i;
+			System.out.println("Enter les valeur du tableaux"+tab[i]);
+			tab[i]=s.nextInt();
+		}
+	}
+
+}

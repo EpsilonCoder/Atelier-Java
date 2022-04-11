@@ -1,0 +1,17 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache1 {
+
+	public static void main(String[] args) {
+		
+		int tab[];
+		int i;
+		
+		System.out.println("Saisir le nombre d'element du tableau");
+		
+		
+	}
+
+}

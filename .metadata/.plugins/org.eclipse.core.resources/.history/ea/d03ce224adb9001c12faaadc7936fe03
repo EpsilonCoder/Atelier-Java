@@ -1,0 +1,22 @@
+package Atelier5;
+
+import java.util.Scanner;
+
+public class Tache2 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int tab[],i,N;
+		System.out.println("Enter la taille de votre tableau");
+		N=s.nextInt();
+		tab=new int[N];
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
