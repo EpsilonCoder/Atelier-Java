@@ -1,0 +1,18 @@
+package Atelier6;
+
+import java.util.Scanner;
+
+public class Collection2 {
+
+	public static void main(String[] args) {
+		Scanner livre=new Scanner(System.in);
+		int L,i;
+		String[] tab;
+		System.out.println("Entrer le nombre de livres a enregister");
+		L=s.nextInt();
+		
+		
+
+	}
+
+}

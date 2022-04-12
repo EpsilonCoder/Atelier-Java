@@ -1,0 +1,11 @@
+package Atelier6;
+import java.util.*;
+public class Collection1 {
+
+	public static void main(String[] args) {
+		
+		livre[] arr=new livre[1];
+
+	}
+
+}

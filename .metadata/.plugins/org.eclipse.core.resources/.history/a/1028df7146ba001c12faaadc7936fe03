@@ -1,0 +1,23 @@
+package Atelier6;
+import java.util.*;
+public class Collection1 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int i,N;
+		String tab[];
+		System.out.println("Enter la taille de votre tableau");
+		N=s.nextInt();
+		tab=new String[N];
+		
+		
+		for (i=0;i<N;i++) {
+			System.out.println("Saisir la valuer a la position N " +i);
+			tab[i]=s.nextLine();
+		}
+		
+		
+		
+	}
+
+}

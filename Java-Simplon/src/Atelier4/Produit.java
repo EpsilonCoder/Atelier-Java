@@ -6,7 +6,7 @@ public class Produit {
 	private int b;
 	
 	public Produit(int a,int b) {
-		this.a=a;
+	 	this.a=a;
 		this.b=b;	
 	}
 	

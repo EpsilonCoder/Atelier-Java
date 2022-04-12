@@ -5,7 +5,7 @@ public class quotient {
 	private int b;
 	
 	public quotient(int a,int b) {
-		this.a=a;
+	 	this.a=a;
 		this.b=b;	
 	}
 	

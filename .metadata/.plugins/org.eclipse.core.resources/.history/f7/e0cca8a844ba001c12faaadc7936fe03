@@ -1,0 +1,27 @@
+package Atelier6;
+import java.util.*;
+public class Collection1 {
+
+	public static void main(String[] args) {
+		int N,i;
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Entrer le nombre de livre a enregister");
+		N=s.nextInt();
+		
+		String[] tab = new String[N];
+		
+		for (i=1;i<N;i++) {
+			
+			System.out.println("Enter le livre N "+i);
+			tab[i]=s.nextLine();	
+	        
+		}
+		
+		List<String> group = new ArrayList<>(Arrays.asList(tab));
+		System.out.println("Voici la liste des livres enregistré"+group);
+			
+
+	}
+
+}
