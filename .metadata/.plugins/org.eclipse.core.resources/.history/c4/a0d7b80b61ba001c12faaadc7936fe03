@@ -1,0 +1,25 @@
+package Atelier7;
+
+import java.io.File;
+
+public class Fichier1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File supermarche=new File("C://Users/simplon/Desktop/java/supermarche.txt");
+		
+		
+		if(!supermarche.exists()) {
+			try {
+				supermarche.createNewFile();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+		
+
+	}
+
+}

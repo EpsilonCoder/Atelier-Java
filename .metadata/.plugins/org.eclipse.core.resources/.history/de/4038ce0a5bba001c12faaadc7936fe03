@@ -1,0 +1,27 @@
+
+
+
+
+
+
+import java.io.File;
+import java.io.IOException;
+
+public class Fichier {
+
+	public static void main(String[] args) {
+		
+		File file=new File("C://Users/simplon/Desktop/Java/jsp.txt");
+		
+		if(!file.exists()) {
+			try {
+				file.createNewFile();		
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		}
+
+	}
+
+}

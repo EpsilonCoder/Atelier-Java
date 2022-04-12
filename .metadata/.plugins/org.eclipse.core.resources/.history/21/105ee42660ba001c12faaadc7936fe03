@@ -1,0 +1,29 @@
+package Atelier7;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Fichier1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String produit;
+		Scanner s= new Scanner(System.in);
+		
+		System.out.println("Enregister la liste des produits de votre a acheter");
+		produit=s.nextLine();
+		
+		File supermarche=new File("C://Users/simplon/Desktop/java/supermarche.txt");
+		
+		if(!supermarche.exists()) {
+			try {
+				supermarche.createNewFile();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
+
+	}
+
+}

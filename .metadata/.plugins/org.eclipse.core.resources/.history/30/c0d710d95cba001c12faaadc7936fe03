@@ -1,0 +1,23 @@
+package Fichier;
+
+import java.io.File;
+
+public class Fichier1 {
+
+	public static void main(String[] args) {
+	
+		File dossier=new File("C://USers/simplon/Desktop/Fichier/");
+		
+		if(!dossier.exists()) {
+			try {
+				
+				dossier.mkdir();
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}

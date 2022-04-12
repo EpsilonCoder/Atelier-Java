@@ -1,0 +1,21 @@
+package Fichier;
+
+import java.io.File;
+
+public class Fichier1 {
+
+	public static void main(String[] args) {
+		File file=new File("C:/Users/simplon/Desktop/Epsilon.txt");
+		
+		if(!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}

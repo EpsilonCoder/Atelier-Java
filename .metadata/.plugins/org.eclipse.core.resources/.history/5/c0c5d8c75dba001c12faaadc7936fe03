@@ -1,0 +1,23 @@
+package Fichier;
+
+import java.io.File;
+import java.io.FileWriter;
+
+public class Fichier1 {
+
+	public static void main(String[] args) {
+	
+		File fichier=new File("C://Users/simplon/Desktop/nice.php");
+		
+		if(!fichier.exists()) {
+			try {
+				fichier.createNewFile();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
+		FileWriter ecrire=new FileWriter(fichier);
+	}
+
+}
