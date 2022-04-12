@@ -40,7 +40,7 @@ public class Collection2 {
 		Ouvrage.remove(5);
 		System.out.println("Voici la liste des ouvrages apres suppression de l' index 5 \n"+Ouvrage+"\n la taille de votre liste est de " +Ouvrage.size());
 	
-		System.out.println("Voici la recuperation de l'index 3\n"+Ouvrage.get(3));
+		System.out.println("Voici l'index 3\n"+Ouvrage.get(3));
 		
 		
 		
