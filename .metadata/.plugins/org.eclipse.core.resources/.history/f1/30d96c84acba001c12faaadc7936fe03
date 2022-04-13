@@ -3,6 +3,8 @@ package Atelier7;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Fichier1 {
@@ -39,12 +41,19 @@ public class Fichier1 {
 			FileWriter ecrire=new FileWriter(supermarche);
 			BufferedWriter bw=new BufferedWriter(ecrire);
 			for(i=0;i<N;i++) {
-			produit[i].toString();
-	        System.out.println(produit[i]);
-		    bw.write(produit[i] +"||");
+				List<String> lts=Arrays.asList(produit[i]);
+				System.out.println(lts);
+				
+				for(String line:lts) {
+					bw.write(line);
+					bw.newLine();
+					bw.close();
+					ecrire.close();
+					
+				}
+		
 			}
-			bw.close();
-			ecrire.close();
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

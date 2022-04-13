@@ -33,7 +33,6 @@ public class Fichier1 {
 			}
 		}
 		
-		
 	
 		try {
 			FileWriter ecrire=new FileWriter(supermarche);

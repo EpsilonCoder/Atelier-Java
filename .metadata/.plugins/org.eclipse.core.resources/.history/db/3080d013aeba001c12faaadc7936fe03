@@ -1,11 +1,14 @@
 package Atelier7;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Fichier1 {
+public class Fichier2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -36,15 +39,8 @@ public class Fichier1 {
 		
 	
 		try {
-			FileWriter ecrire=new FileWriter(supermarche);
-			BufferedWriter bw=new BufferedWriter(ecrire);
-			for(i=0;i<N;i++) {
-			produit[i].toString();
-	        System.out.println(produit[i]);
-		    bw.write(produit[i] +"||");
-			}
-			bw.close();
-			ecrire.close();
+			
+		BufferedReader reader=new BufferedReader(new InputStreamReader(new FileInputStream(supermarche)));
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

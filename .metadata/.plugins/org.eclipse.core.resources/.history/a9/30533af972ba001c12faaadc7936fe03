@@ -17,7 +17,6 @@ public class Fichier1 {
 		System.out.println("Enter le nombre de produit a Enregister");
 		N=s.nextInt();
 		
-		
 		produit=new String[N];
 		for (i=0;i<N;i++) {		
 			System.out.println("Enregister le produit N° " +i+ " a acheter ");
@@ -32,7 +31,6 @@ public class Fichier1 {
 				// TODO: handle exception
 			}
 		}
-		
 		
 	
 		try {

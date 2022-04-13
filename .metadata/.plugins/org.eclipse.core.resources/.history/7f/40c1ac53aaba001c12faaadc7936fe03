@@ -3,6 +3,8 @@ package Atelier7;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Fichier1 {
@@ -33,7 +35,8 @@ public class Fichier1 {
 			}
 		}
 		
-		
+		List<String> lts=Arrays.asList(produit[i]);
+		System.out.println(lts);
 	
 		try {
 			FileWriter ecrire=new FileWriter(supermarche);

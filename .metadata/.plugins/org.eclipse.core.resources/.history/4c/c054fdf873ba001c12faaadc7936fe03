@@ -1,0 +1,16 @@
+package Atelier7;
+
+import java.io.BufferedWriter;
+import java.io.File;
+
+public class Fichier2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File supermarche=new File("C://Users/simplon/Desktop/java/supermarche.txt");
+
+ 
+	}
+
+}
