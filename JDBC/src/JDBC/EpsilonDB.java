@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import com.mysql.cj.protocol.Resultset;
-
 public class EpsilonDB {
 
 	public static void main(String[] args) throws Exception {
@@ -56,17 +54,9 @@ public class EpsilonDB {
 			String nom=result.getString("nom");
 			String tel=result.getString("tel");
 			
-			
 			System.out.println("la selection \n"+id+"=>"+prenom+"=>"+nom+"=>"+tel);
 		}
 		
-		String sql5="Insert into apprenant values(?,?,?)";
-		Statement state4=con.createStatement();
-		ResultSet result5=state4.executeQuery(sql5);
-		
-		while(result5.next()) {
-			
-		}
 		
 		
 		
