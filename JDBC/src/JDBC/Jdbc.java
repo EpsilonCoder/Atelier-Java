@@ -34,7 +34,7 @@ public class Jdbc {
 			String prenom =rlt.getString("prenom");
 			System.out.println(prenom);
 			
-		}  
+		}
 		
 		String sql3="Select id,prenom from apprenant";
 		rlt=stm.executeQuery(sql3);
@@ -50,6 +50,7 @@ public class Jdbc {
 		PreparedStatement preparedStatement=connection.prepareStatement(sql4);
 		preparedStatement.setInt(1, 1);
 		rlt=preparedStatement.executeQuery();
+
 		
 		while(rlt.next()) {
 			int id=rlt.getInt("id");
@@ -58,7 +59,7 @@ public class Jdbc {
 		}
 		
 		
-		System.out.println("\nsql" +sql4);
+		
 		 
 		
 		
